@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Pokemon from "./pokemon";
-import main from "./pokemon-main";
+import Main from "./pokemon-main";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Pokemon />
-    <main />
+    <Main />
   </React.StrictMode>
 );
