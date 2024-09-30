@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --DarkBlue: hsl(232, 86%, 11%);
+  --VeryDarkBlue: hsl(207, 26%, 17%);
+  --VeryDarkBlue: hsl(200, 15%, 8%);
+  --DarkGray: hsl(0, 0%, 52%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+.pokemon-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+  /* flex-grow: 1; */
+  /* align-items: center; */
+  gap: 1rem;
+}
+.nav-item {
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--DarkBlue);
+  text-decoration: none;
+  color: rgb(5, 0, 0);
+  border-radius: 1rem;
+  transition: 2s ease;
+  background-color: burlywood;
+  padding: 1rem;
+}
+.active::after {
+  content: "";
+  margin-left: auto;
+  width: 0;
+  height: 2px;
+  color: orangered;
+}
+.active:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: rgb(255, 0, 0);
+  transition: 2s ease;
+}
+.nav-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* margin-left: auto; */
+}
+.nav-search input {
+  font-size: 1.2rem;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  outline: none;
+  /* border-radius: 5px; */
+  border-bottom: 1px solid black;
+}
+.nav-search button {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 15px;
+  border: 0.2px solid black;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.427);
+  background-color: rgba(1, 62, 97, 0.804);
+}
